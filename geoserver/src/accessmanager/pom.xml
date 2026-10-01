@@ -285,6 +285,12 @@
             <artifactId>gs-wfs</artifactId>
             <version>${gs.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.geoserver</groupId>
+            <artifactId>gs-rest</artifactId>
+            <version>${gs.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- GeoTools -->
         <dependency>
@@ -358,7 +364,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet-api.version}</version>
-            <scope>test</scope>
+            <scope>provided</scope>
         </dependency>
 
         <!-- Needed by the GeoServer test base classes rather than by our own test
